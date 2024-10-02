@@ -14,4 +14,4 @@ class TeamSerializer(serializers.ModelSerializer):
 class PeopleSerializer(serializers.ModelSerializer):
     class Meta:
         model = People
-        fields = ("id", "first_name", "last name", "email", "team")
+        fields = ("id", "first_name", "last_name", "email", "team")
