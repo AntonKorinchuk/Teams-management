@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from models import Team, People
+from manager.models import Team, People
 
 
 class TeamSerializer(serializers.ModelSerializer):

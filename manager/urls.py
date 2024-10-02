@@ -1,6 +1,6 @@
 from rest_framework.routers import DefaultRouter
 
-from views import TeamViewSet, PeopleViewSet
+from manager.views import TeamViewSet, PeopleViewSet
 
 
 router = DefaultRouter()

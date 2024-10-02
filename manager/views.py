@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 
-from models import Team, People
-from serializers import TeamSerializer, PeopleSerializer
+from manager.models import Team, People
+from manager.serializers import TeamSerializer, PeopleSerializer
 
 
 class TeamViewSet(viewsets.ModelViewSet):
