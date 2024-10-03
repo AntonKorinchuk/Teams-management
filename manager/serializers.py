@@ -1,19 +1,19 @@
 from rest_framework import serializers
 
-from manager.models import Team, People
+from manager.models import Team, Person
 
 
 class TeamSerializer(serializers.ModelSerializer):
-    peoples = serializers.SlugRelatedField(
-        many=True, read_only=True, slug_field="full_name"
+    persons = serializers.SlugRelatedField(
+        many=True, slug_field="full_name", read_only=True
     )
 
     class Meta:
         model = Team
-        fields = ("id", "name", "peoples")
+        fields = ("id", "name", "persons")
 
 
-class PeopleSerializer(serializers.ModelSerializer):
+class PersonSerializer(serializers.ModelSerializer):
     class Meta:
-        model = People
+        model = Person
         fields = ("id", "first_name", "last_name", "email", "team")

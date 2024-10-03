@@ -8,12 +8,12 @@ class Team(models.Model):
         return self.name
 
 
-class People(models.Model):
+class Person(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     email = models.EmailField(unique=True)
     team = models.ForeignKey(
-        Team, on_delete=models.CASCADE, related_name="peoples", null=True, blank=True
+        Team, on_delete=models.CASCADE, related_name="persons", null=True, blank=True
     )
 
     def __str__(self) -> str:
