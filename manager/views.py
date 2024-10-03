@@ -1,12 +1,12 @@
 from rest_framework import viewsets
 
 from manager.models import Team, Person
-from manager.serializers import TeamListSerializer, PersonSerializer
+from manager.serializers import TeamSerializer, PersonSerializer
 
 
 class TeamViewSet(viewsets.ModelViewSet):
     queryset = Team.objects.prefetch_related("persons")
-    serializer_class = TeamListSerializer
+    serializer_class = TeamSerializer
 
 
 class PersonViewSet(viewsets.ModelViewSet):
