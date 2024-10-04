@@ -1,6 +1,6 @@
-# Teams Management Django Project
+# Teams Management API
 
-This is a Django project for managing teams and team members. The project includes APIs for performing CRUD operations on teams and users.
+This is a project for managing teams and team members. The project includes APIs for performing CRUD operations on teams and users.
 
 ## Installation
 Follow these steps to set up the project locally:
